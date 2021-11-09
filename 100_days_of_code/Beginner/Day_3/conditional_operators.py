@@ -7,12 +7,15 @@ if height >= 120:
     if age < 12:
         bill = 5
         print("Child ticket is £5.0")
-    elif age >= 18:
-        bill = 15
-        print("Adult tickets are £15.0")
+    elif age <= 18:
+        bill = 7.50
+        print("Adult tickets are £7.5")
+    elif age >= 45 and age <=55:
+        bill = 0
+        print("Have a free ride on us!")
     else:
-        bill = 7.5
-        print("Teenage tickets are £7.50")
+        bill = 15
+        print("Teenage tickets are £15")
     
     photos = input("Do you want a photo taken? Y or N: ")
     if photos == "Y":
