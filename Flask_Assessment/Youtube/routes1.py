@@ -1,8 +1,6 @@
 import requests
 
-from jmespath import search
-from isodate import parse_duration
-from flask import Blueprint, render_template, current_app, request, redirect
+from flask import Blueprint, current_app, request
 
 main=Blueprint('main', __name__)
 
