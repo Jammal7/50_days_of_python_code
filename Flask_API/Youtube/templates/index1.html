@@ -61,7 +61,10 @@
                 <div class="btn-group">
                   <a type="button" href="{{ video.url }}" class="btn btn-sm btn-outline-secondary">View</a>
                 </div>
-                <small class="text-muted">{{ video.duration }} mins</small>
+                <div class="text-muted">{{ video.Channel_name }} </div></br>
+                <div class="text-muted">{{ video.Channel_stats.viewCount }} </div><br/>
+                <b class="text-muted">{{ video.Channel_stats.subscriberCount }} </b><br/>
+                <b class="text-muted">{{ video.Channel_stats.videoCount }} </b>
               </div>
             </div>
           </div>
